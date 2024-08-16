@@ -1,0 +1,14 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "jessamy:meteo-weather",
+  "visibility": "private",
+  "url": "https://github.com/JessamyT/meteo-weather",
+  "description": "Provides a sensor that pulls air quality data from open-meteo.com, with configurable location coordinates.",
+  "models": [
+    {
+      "api": "rdk:components:sensor",
+      "model": "jessamy:weather:meteo_PM"
+    }
+  ],
+  "entrypoint": "run.sh"
+}
