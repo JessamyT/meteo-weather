@@ -29,7 +29,7 @@ The following attributes are available for `rdk:sensor:jessamy:weather:meteo_PM`
 
 | Name | Type | Inclusion | Description |
 | ---- | ---- | --------- | ----------- |
-| `latitude` | float | **Required** |  Latitude at which to get the readings |
+| `latitude` | float | Optional |  Latitude at which to get the readings |
 | `longitude` | float | Optional |  Longitude at which to get the readings |
 
 ### Example Configuration
