@@ -6,7 +6,7 @@
   "description": "Provides a sensor that pulls air quality data from open-meteo.com, with configurable location coordinates.",
   "models": [
     {
-      "api": "rdk:components:sensor",
+      "api": "rdk:component:sensor",
       "model": "jessamy:weather:meteo_PM"
     }
   ],
