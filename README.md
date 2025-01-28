@@ -1,18 +1,13 @@
-# meteo_PM modular component
+# `meteo_PM` modular component
 
-This module implements the [Viam sensor API](https://github.com/rdk/sensor-api) in a jessamy:weather:meteo_PM model.
+This module implements the [Viam sensor API](https://docs.viam.com/dev/reference/apis/components/sensor/) in a `jessamy:weather:meteo_PM` model.
 With this model, you can gather [Open-Meteo](https://open-meteo.com/en/docs/air-quality-api) PM2.5 and PM10 air quality data from anywhere in the world, at the coordinates you specify.
 
-## Build and Run
+## Configure your `meteo_PM` sensor
 
-To use this module, follow these instructions to [add a module from the Viam Registry](https://docs.viam.com/registry/configure/#add-a-modular-resource-from-the-viam-registry) and select the `rdk:sensor:jessamy:weather:meteo_PM` model from the [`jessamy:weather:meteo_PM` module](https://app.viam.com/module/rdk/jessamy:weather:_PM).
-
-## Configure your meteo_PM sensor
-
-Navigate to the **CONFIGURE** tab of your robot’s page in [the Viam app](https://app.viam.com/).
-Add a component.
-Select the `sensor` type, then select the `jessamy:weather:meteo_PM` model.
-Enter a name for your sensor and click **Create**.
+Navigate to the **CONFIGURE** tab of your machine’s page in the [Viam app](https://app.viam.com/).
+Click the **+** button, select **Component**, then select the `sensor / weather:meteo_PM` model provided by the [`weather` module](https://app.viam.com/module/rdk/jessamy/weather).
+Click **Add module**, enter a name for your sensor, and click **Create**.
 
 On the new component panel, copy and paste the following attribute template into your sensor’s **Attributes** box:
 
@@ -27,10 +22,10 @@ On the new component panel, copy and paste the following attribute template into
 
 The following attributes are available for `rdk:sensor:jessamy:weather:meteo_PM` sensors:
 
-| Name | Type | Inclusion | Description |
-| ---- | ---- | --------- | ----------- |
-| `latitude` | float | Optional |  Latitude at which to get the readings. Defaults to 45. |
-| `longitude` | float | Optional |  Longitude at which to get the readings. Defaults to -121. |
+| Name        | Type  | Inclusion | Description                            |
+| ----------- | ----- | --------- | -------------------------------------- |
+| `latitude`  | float | Optional  | Latitude at which to get the readings  |
+| `longitude` | float | Optional  | Longitude at which to get the readings |
 
 ### Example Configuration
 
